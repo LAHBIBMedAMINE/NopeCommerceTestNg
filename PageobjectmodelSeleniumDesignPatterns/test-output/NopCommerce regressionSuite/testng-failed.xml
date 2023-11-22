@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce regressionSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="registraion Suite(failed)">
+    <classes>
+      <class name="tests.CheckOutTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="tearDownClass"/>
+          <include name="downloadPdfTest"/>
+          <include name="teardown"/>
+          <include name="fillinfoAndOptionSelecton"/>
+          <include name="takescreenshotFailure"/>
+        </methods>
+      </class> <!-- tests.CheckOutTest -->
+      <class name="tests.UserRegistrationTEST">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="UserLogInSucess"/>
+          <include name="tearDownClass"/>
+          <include name="UserRegisterInSucess"/>
+          <include name="UserLogout"/>
+          <include name="takescreenshotFailure"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.UserRegistrationTEST -->
+    </classes>
+  </test> <!-- registraion Suite(failed) -->
+</suite> <!-- Failed suite [NopCommerce regressionSuite] -->
